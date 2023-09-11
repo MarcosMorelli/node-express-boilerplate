@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  node-express:
+    build: .
+    image: node-express-boilerplate:latest
+    env_file:
+      - .env.example
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/node-express-boilerplate
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongodb
+
+  test:
+    build:
+      context: .
+      target: test
+    image: marcosmorelli/node-express-boilerplate:test
+    env_file:
+      - .env.example
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/node-express-boilerplate
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:7.0.0
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - dbdata:/data/db
+
+volumes:
+  dbdata:
+
+networks:
+  default:
+    name: node-network
+    driver: bridge
