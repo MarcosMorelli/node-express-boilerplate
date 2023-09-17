@@ -1,7 +1,7 @@
 {
   "name": "node-express-boilerplate",
-  "version": "1.0.0",
   "description": "Create a Node.js app for building production-ready RESTful APIs using Express",
+  "private": true,
   "main": "src/index.js",
   "repository": "https://github.com/MarcosMorelli/node-express-boilerplate.git",
   "author": "Marcos Morelli",
