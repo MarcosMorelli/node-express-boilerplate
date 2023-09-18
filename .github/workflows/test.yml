@@ -17,12 +17,12 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - uses: ./.github/actions/node-pnpm-setup
+      - uses: ./.github/actions/node-pnpm-setup
 
-    - name: Setup MongoDB 
-      run: docker compose up -d mongodb
+      - name: Setup MongoDB 
+        run: docker compose up -d mongodb
 
-    - name: Runs Tests
-      run: cp .env.example .env && npm run test
+      - name: Runs Tests
+        run: cp .env.example .env && npm run test

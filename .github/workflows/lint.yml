@@ -25,15 +25,15 @@ concurrency:
   cancel-in-progress: true
   
 jobs:
-  Test:
+  Linters:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - uses: ./.github/actions/node-pnpm-setup
+      - uses: ./.github/actions/node-pnpm-setup
 
-    - name: Runs prettier
-      run: npm run prettier
+      - name: Runs prettier
+        run: npm run prettier
 
-    - name: Runs linter
-      run: npm run lint
+      - name: Runs linter
+        run: npm run lint
