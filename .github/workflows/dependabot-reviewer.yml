@@ -9,6 +9,7 @@ permissions:
   
 jobs:
   review-dependabot-pr:
+    if: ${{ github.event.sender.login == 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
       - name: Dependabot metadata
