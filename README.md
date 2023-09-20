@@ -4,6 +4,12 @@ A boilerplate/starter project for quickly building RESTful APIs using Node.js, E
 
 By running a single command, you will get a production-ready Node.js app installed and fully configured on your machine. The app comes with many built-in features, such as authentication using JWT, request validation, unit and integration tests, continuous integration, docker support, API documentation, pagination, etc. For more details, check the features list below.
 
+## Live Demo
+
+![Live demo docs page ](https://i.ibb.co/Nmg7BV0/Screenshot-2023-09-20-at-16-46-39.png)
+
+You can check this app live [HERE](https://morelli-node-boilerplate-95e90e9e70fd.herokuapp.com/v1/docs) hosted by [Heroku](https://www.heroku.com/) and [MongoDB Atlas](https://www.mongodb.com/) both at free tiers.
+
 ## Manual Installation
 
 Clone the repo:
