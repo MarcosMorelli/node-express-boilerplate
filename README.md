@@ -39,9 +39,11 @@ cp .env.example .env
 - [Validation](#validation)
 - [Authentication](#authentication)
 - [Authorization](#authorization)
+- [Health Check](#health-check)
 - [Logging](#logging)
 - [Custom Mongoose Plugins](#custom-mongoose-plugins)
 - [Linting](#linting)
+- [Automatic Dependencies Update](#automatic-dependencies-update)
 - [Contributing](#contributing)
 
 ## Features
@@ -49,11 +51,13 @@ cp .env.example .env
 - **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
 - **Authentication and authorization**: using [passport](http://www.passportjs.org)
 - **Validation**: request data validation using [Joi](https://github.com/hapijs/joi)
+- **Health Check**: service and db health check
 - **Logging**: using [winston](https://github.com/winstonjs/winston) and [morgan](https://github.com/expressjs/morgan)
 - **Testing**: unit and integration tests using [Jest](https://jestjs.io)
 - **Error handling**: centralized error handling mechanism
 - **API documentation**: with [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc) and [swagger-ui-express](https://github.com/scottie1984/swagger-ui-express)
 - **Dependency management**: with [PNPM](https://pnpm.io/)
+- **Automatic dependencies update**: with [Dependabot](https://docs.github.com/pt/code-security/dependabot)
 - **Environment variables**: using [dotenv](https://github.com/motdotla/dotenv) and [cross-env](https://github.com/kentcdodds/cross-env#readme)
 - **Security**: set security HTTP headers using [helmet](https://helmetjs.github.io)
 - **Santizing**: sanitize request data against xss and query injection
@@ -172,6 +176,9 @@ To view the list of available APIs and their specifications, run the server and 
 ### API Endpoints
 
 List of available routes:
+
+**Health Check routes**:\
+`GET /health` - get app health info
 
 **Auth routes**:\
 `POST /v1/auth/register` - register\
@@ -296,6 +303,31 @@ In the example above, an authenticated user can access this route only if that u
 The permissions are role-based. You can view the permissions/rights of each role in the `src/config/roles.js` file.
 
 If the user making the request does not have the required permissions to access this route, a Forbidden (403) error is thrown.
+
+## Health Check
+
+The app has health check mechanism.
+
+```javascript
+const healthcheck = catchAsync(async (_req, res) => {
+  const isDbHealthy = await healthcheckService.checkConnection();
+  if (!isDbHealthy) {
+    throw new ApiError(httpStatus.SERVICE_UNAVAILABLE, 'DB unavailabe');
+  }
+
+  const body = {
+    uptime: process.uptime(),
+    message: 'OK',
+    timestamp: Date.now(),
+  };
+
+  res.status(httpStatus.OK).send(body);
+});
+```
+
+If the database is failing or disconnected, a Service Unavailable (503) is thrown.
+
+The `checkConnection` function creates/updates a document at `healthchecks` collection to ensure that everything is fine. 
 
 ## Logging
 
