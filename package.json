@@ -45,7 +45,7 @@
     "express-rate-limit": "^7.0.2",
     "helmet": "^7.0.0",
     "http-status": "^1.7.0",
-    "joi": "^17.10.2",
+    "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.29.4",
     "mongoose": "^7.5.3",
