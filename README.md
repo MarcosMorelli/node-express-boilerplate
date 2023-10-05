@@ -8,7 +8,7 @@ By running a single command, you will get a production-ready Node.js app install
 
 ![Live demo docs page ](https://i.ibb.co/Nmg7BV0/Screenshot-2023-09-20-at-16-46-39.png)
 
-You can check this app live [HERE](https://morelli-node-boilerplate-95e90e9e70fd.herokuapp.com/v1/docs) hosted by [Heroku](https://www.heroku.com/) and [MongoDB Atlas](https://www.mongodb.com/) both at free tiers.
+You can check [Live Demo](https://morelli-node-express-boilerplate.up.railway.app/v1/docs/) of this project hosted by [Railway](https://railway.app/) and [MongoDB Atlas](https://www.mongodb.com/).
 
 ## Manual Installation
 
