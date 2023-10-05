@@ -16,7 +16,7 @@ const swaggerDef = {
   },
   servers: [
     {
-      url: `https://morelli-node-boilerplate-95e90e9e70fd.herokuapp.com/v1`,
+      url: 'https://morelli-node-express-boilerplate.up.railway.app/v1',
       description: 'Live demo server',
     },
     {
