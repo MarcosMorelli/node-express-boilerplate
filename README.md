@@ -79,7 +79,7 @@ cp .env.example .env
 Running locally:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Running in production:
@@ -92,39 +92,39 @@ Testing:
 
 ```bash
 # run all tests
-npm run test
+pnpm run test
 
 # run all tests in watch mode
-npm run test:watch
+pnpm run test:watch
 
 # run test coverage
-npm run coverage
+pnpm run coverage
 ```
 
 Docker:
 
 ```bash
 # run docker container in production mode
-npm run docker:prod
+pnpm run docker:prod
 
 # run all tests in a docker container
-npm run docker:test
+pnpm run docker:test
 ```
 
 Linting:
 
 ```bash
 # run ESLint
-npm run lint
+pnpm run lint
 
 # fix ESLint errors
-npm run lint:fix
+pnpm run lint:fix
 
 # run prettier
-npm run prettier
+pnpm run prettier
 
 # fix prettier errors
-npm run prettier:fix
+pnpm run prettier:fix
 ```
 
 ## Environment Variables
