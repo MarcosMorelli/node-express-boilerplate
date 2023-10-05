@@ -135,6 +135,9 @@ The environment variables can be found and modified in the `.env` file. They com
 # Port number
 PORT=3000
 
+# Logger level
+LOG_LEVEL=info
+
 # Environment config
 NODE_ENV=production
 
