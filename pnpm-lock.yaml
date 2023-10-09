@@ -42,8 +42,8 @@ dependencies:
     specifier: ^2.29.4
     version: 2.29.4
   mongoose:
-    specifier: ^7.6.0
-    version: 7.6.0
+    specifier: ^7.6.1
+    version: 7.6.1
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
@@ -3968,8 +3968,8 @@ packages:
       '@mongodb-js/saslprep': 1.1.0
     dev: false
 
-  /mongoose@7.6.0:
-    resolution: {integrity: sha512-ztQ12rm0BQN5i7LB6xhWX4l9a9w2aa3jEwa/mM2vAutYJRyAwOzcusvKJBULMzFHyUDBOVW15grisexypgMIWA==}
+  /mongoose@7.6.1:
+    resolution: {integrity: sha512-Iflr60FL7mabBdgAtumLTwEGdZGV6IKHfF7F75En2JWpPitorwQeCFqWPcPHRnBxncKANl3gwI9nh2Yb4y3/sA==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.5.0
