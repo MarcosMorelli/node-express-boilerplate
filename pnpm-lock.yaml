@@ -30,8 +30,8 @@ dependencies:
     specifier: ^7.0.0
     version: 7.0.0
   http-status:
-    specifier: ^1.7.0
-    version: 1.7.0
+    specifier: ^1.7.3
+    version: 1.7.3
   joi:
     specifier: ^17.11.0
     version: 17.11.0
@@ -2826,8 +2826,8 @@ packages:
       toidentifier: 1.0.1
     dev: false
 
-  /http-status@1.7.0:
-    resolution: {integrity: sha512-6HZ8T2ywZKtNKOrRA22x4Z+fK+UiWzimWYSTROVHrZ46RX+hKsg9wCQiodRtfNrKfsvOkwsXA6R9q+TmDY+8nQ==}
+  /http-status@1.7.3:
+    resolution: {integrity: sha512-GS8tL1qHT2nBCMJDYMHGkkkKQLNkIAHz37vgO68XKvzv+XyqB4oh/DfmMHdtRzfqSJPj1xKG2TaELZtlCz6BEQ==}
     engines: {node: '>= 0.4.0'}
     dev: false
 
