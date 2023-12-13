@@ -92,8 +92,8 @@ devDependencies:
     specifier: ^5.0.1
     version: 5.0.1(eslint-config-prettier@9.1.0)(eslint@8.55.0)(prettier@3.1.1)
   eslint-plugin-security:
-    specifier: ^1.7.1
-    version: 1.7.1
+    specifier: ^2.0.0
+    version: 2.0.0
   jest:
     specifier: ^29.7.0
     version: 29.7.0
@@ -2243,8 +2243,8 @@ packages:
       string.prototype.matchall: 4.0.10
     dev: true
 
-  /eslint-plugin-security@1.7.1:
-    resolution: {integrity: sha512-sMStceig8AFglhhT2LqlU5r+/fn9OwsA72O5bBuQVTssPCdQAOQzL+oMn/ZcpeUY6KcNfLJArgcrsSULNjYYdQ==}
+  /eslint-plugin-security@2.0.0:
+    resolution: {integrity: sha512-2vJLgIm33tisno85/20c8g8t8hGx4/JSNCtmoaqRHfDximblVzMM9jbCrvNkPlCjyLLCfWaXGgWO0tW2NpnnjQ==}
     dependencies:
       safe-regex: 2.1.1
     dev: true
