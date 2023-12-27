@@ -39,8 +39,8 @@ dependencies:
     specifier: ^9.0.2
     version: 9.0.2
   moment:
-    specifier: ^2.30.0
-    version: 2.30.0
+    specifier: ^2.30.1
+    version: 2.30.1
   mongoose:
     specifier: ^7.6.3
     version: 7.6.3
@@ -3938,8 +3938,8 @@ packages:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
 
-  /moment@2.30.0:
-    resolution: {integrity: sha512-8XSlYFhOSJvnEJOas6RpDCNU2PYeVC+oE33d3Z9tIsXpD8LIgBeqrHPjP8es4b3fcJpf07D1PJWGDUfdbqDLnQ==}
+  /moment@2.30.1:
+    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
     dev: false
 
   /mongodb-connection-string-url@2.6.0:
