@@ -1,5 +1,9 @@
 # RESTful API Node Server Boilerplate
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MarcosMorelli/node-express-boilerplate/blob/main/LICENSE)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/marcosmorelli/node-express-boilerplate)](https://github.com/marcosmorelli/node-express-boilerplate/releases)
+[![cov](https://marcosmorelli.github.io/node-express-boilerplate/badges/coverage.svg)](https://marcosmorelli.github.io/node-express-boilerplate/index.html)
+
 A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and Mongoose.
 
 By running a single command, you will get a production-ready Node.js app installed and fully configured on your machine. The app comes with many built-in features, such as authentication using JWT, request validation, unit and integration tests, continuous integration, docker support, API documentation, pagination, etc. For more details, check the features list below.
