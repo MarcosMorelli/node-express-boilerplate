@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
   
 jobs:
-  Test:
+  coverage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,13 +27,8 @@ jobs:
       - name: Runs Tests
         run: cp .env.example .env && npm run coverage
 
-      - name: Create Coverage Badges
-        uses: jaywcjlove/coverage-badges-cli@main
-        with:
-          style: flat
-          source: coverage/coverage-summary.json
-          output: coverage/coverage.svg
-          jsonPath: totals.percent_covered
+      - name: Create Coverage Badge
+        run: npm i coverage-badges-cli -g && coverage-badges --output coverage/badge.svg
 
       - name: Setup Pages
         if: github.ref == 'refs/heads/main'
@@ -45,9 +40,9 @@ jobs:
         with:
           path: './coverage'
     
-  Deploy-coverage:
+  deploy-coverage:
     if: github.ref == 'refs/heads/main'
-    needs: Test
+    needs: coverage
 
     permissions:
       pages: write
