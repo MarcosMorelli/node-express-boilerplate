@@ -28,6 +28,7 @@ jobs:
         run: cp .env.example .env && npm run coverage
 
       - name: Create Coverage Badge
+        if: github.ref == 'refs/heads/main'
         run: npm i coverage-badges-cli -g && coverage-badges --output coverage/badge.svg
 
       - name: Setup Pages
