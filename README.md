@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MarcosMorelli/node-express-boilerplate/blob/main/LICENSE)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/marcosmorelli/node-express-boilerplate)](https://github.com/marcosmorelli/node-express-boilerplate/releases)
-[![cov](https://marcosmorelli.github.io/node-express-boilerplate/badges/coverage.svg)](https://marcosmorelli.github.io/node-express-boilerplate/index.html)
+[![Coverage](https://marcosmorelli.github.io/node-express-boilerplate/coverage.svg)](https://marcosmorelli.github.io/node-express-boilerplate/index.html)
 
 A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and Mongoose.
 
