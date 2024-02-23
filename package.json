@@ -44,7 +44,7 @@
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.1.5",
     "helmet": "^7.1.0",
-    "http-status": "^1.7.3",
+    "http-status": "^1.7.4",
     "joi": "^17.12.2",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.30.1",
