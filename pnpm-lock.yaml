@@ -42,8 +42,8 @@ dependencies:
     specifier: ^2.30.1
     version: 2.30.1
   mongoose:
-    specifier: ^8.4.1
-    version: 8.4.1
+    specifier: ^8.4.3
+    version: 8.4.3
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
@@ -3971,8 +3971,8 @@ packages:
       mongodb-connection-string-url: 3.0.0
     dev: false
 
-  /mongoose@8.4.1:
-    resolution: {integrity: sha512-odQ2WEWGL3hb0Qex+QMN4eH6D34WdMEw7F1If2MGABApSDmG9cMmqv/G1H6WsXmuaH9mkuuadW/WbLE5+tHJwA==}
+  /mongoose@8.4.3:
+    resolution: {integrity: sha512-GxPVLD+I/dxVkgcts2r2QmJJvS62/++btVj3RFt8YnHt+DSOp1Qjj62YEvgZaElwIOTcc4KGJM95X5LlrU1qQg==}
     engines: {node: '>=16.20.1'}
     dependencies:
       bson: 6.7.0
