@@ -42,7 +42,7 @@
     "express": "^4.21.0",
     "express-compression": "^1.0.2",
     "express-mongo-sanitize": "^2.2.0",
-    "express-rate-limit": "^7.4.0",
+    "express-rate-limit": "^7.4.1",
     "helmet": "^8.0.0",
     "http-status": "^1.7.4",
     "joi": "^17.13.3",
