@@ -33,8 +33,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       http-status:
-        specifier: ^1.7.4
-        version: 1.7.4
+        specifier: ^1.8.0
+        version: 1.8.0
       joi:
         specifier: ^17.13.3
         version: 17.13.3
@@ -1502,8 +1502,8 @@ packages:
     resolution: {integrity: sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ==}
     engines: {node: '>= 0.8'}
 
-  http-status@1.7.4:
-    resolution: {integrity: sha512-c2qSwNtTlHVYAhMj9JpGdyo0No/+DiKXCJ9pHtZ2Yf3QmPnBIytKSRT7BuyIiQ7icXLynavGmxUqkOjSrAuMuA==}
+  http-status@1.8.0:
+    resolution: {integrity: sha512-BQ3yf+gLZdTAHLvFdE2zXa/M8RABAN5ZCnsXmaIVsEtOVWUrpk+bvWame10M75aqtKUsmqt8bG0t7iSJMtmbDQ==}
     engines: {node: '>= 0.4.0'}
 
   human-signals@2.1.0:
@@ -4564,7 +4564,7 @@ snapshots:
       statuses: 2.0.1
       toidentifier: 1.0.1
 
-  http-status@1.7.4: {}
+  http-status@1.8.0: {}
 
   human-signals@2.1.0: {}
 
