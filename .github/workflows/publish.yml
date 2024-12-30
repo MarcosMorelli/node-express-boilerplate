@@ -47,8 +47,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          cache-from: type=registry,ref=${{ env.LATEST_TAG }}
-          cache-to: type=registry,ref=${{ env.LATEST_TAG }},mode=max
+          provenance: false
           tags: ${{ env.LATEST_TAG }}
           push: true
           platforms: linux/amd64,linux/arm64
