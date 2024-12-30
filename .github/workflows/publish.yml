@@ -52,7 +52,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
 
-      - name: Update repo description
+      - name: Update Repo Description
         uses: peter-evans/dockerhub-description@v4
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}

@@ -1,18 +1,14 @@
 # RESTful API Node Server Boilerplate
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MarcosMorelli/node-express-boilerplate/blob/main/LICENSE)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/marcosmorelli/node-express-boilerplate)](https://github.com/marcosmorelli/node-express-boilerplate/releases)
+[![GitHub Release (latest SemVer)](https://img.shields.io/github/v/release/marcosmorelli/node-express-boilerplate)](https://github.com/marcosmorelli/node-express-boilerplate/releases)
 [![Coverage](https://marcosmorelli.github.io/node-express-boilerplate/badge.svg)](https://marcosmorelli.github.io/node-express-boilerplate/index.html)
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/marcosmorelli/node-express-boilerplate)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MarcosMorelli/node-express-boilerplate)
 
 A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and Mongoose.
 
 By running a single command, you will get a production-ready Node.js app installed and fully configured on your machine. The app comes with many built-in features, such as authentication using JWT, request validation, unit and integration tests, continuous integration, docker support, API documentation, pagination, etc. For more details, check the features list below.
-
-## Live Demo
-
-![Live demo docs page ](https://i.ibb.co/Nmg7BV0/Screenshot-2023-09-20-at-16-46-39.png)
-
-You can check [Live Demo](https://morelli-node-express-boilerplate.up.railway.app/v1/docs/) of this project hosted by [Railway](https://railway.app/) and [MongoDB Atlas](https://www.mongodb.com/).
 
 ## Manual Installation
 
