@@ -16,8 +16,8 @@
     "lint:fix": "eslint --cache . --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
-    "docker:prod": "docker compose up node-express",
-    "docker:test": "docker compose up test"
+    "docker:prod": "docker compose up --build node-express",
+    "docker:test": "docker compose up --build test"
   },
   "keywords": [
     "node",
@@ -74,6 +74,6 @@
     "supertest": "^7.0.0"
   },
   "engines": {
-    "node": "20.x || 18.x"
+    "node": "22.x || 20.x || 18.x"
   }
 }

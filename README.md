@@ -240,7 +240,7 @@ The app has a utility ApiError class to which you can attach a response code and
 For example, if you are trying to get a user from the DB who is not found, and you want to send a 404 error, the code should look something like:
 
 ```javascript
-const httpStatus = require('http-status');
+const {status: httpStatus} = require('http-status');
 const ApiError = require('../utils/ApiError');
 const User = require('../models/User');
 
