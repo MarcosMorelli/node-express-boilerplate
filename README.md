@@ -110,9 +110,6 @@ Docker:
 ```bash
 # run docker container in production mode
 pnpm run docker:prod
-
-# run all tests in a docker container
-pnpm run docker:test
 ```
 
 Linting:

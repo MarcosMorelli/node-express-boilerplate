@@ -16,8 +16,7 @@
     "lint:fix": "eslint --cache . --fix",
     "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
-    "docker:prod": "docker compose up node-express",
-    "docker:test": "docker compose up test"
+    "docker:prod": "docker compose up node-express"
   },
   "keywords": [
     "node",
