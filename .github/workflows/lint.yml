@@ -33,7 +33,7 @@ jobs:
       - uses: ./.github/actions/node-pnpm-setup
 
       - name: Runs prettier
-        run: npm run prettier
+        run: pnpm run prettier
 
       - name: Runs linter
-        run: npm run lint
+        run: pnpm run lint
