@@ -20,6 +20,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Docker
+        uses: docker/setup-docker-action@v4
+        with:
+          daemon-config: |
+            {
+              "debug": true,
+              "features": {
+                "containerd-snapshotter": true
+              }
+            }
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
@@ -41,3 +52,10 @@ jobs:
           tags: ${{ env.LATEST_TAG }}
           push: true
           platforms: linux/amd64,linux/arm64
+
+      - name: Update repo description
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: marcosmorelli/node-express-boilerplate
