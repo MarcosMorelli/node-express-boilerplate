@@ -1,3 +1,4 @@
+const logger = require('../config/logger');
 const { Healthcheck } = require('../models');
 
 /**
@@ -16,6 +17,7 @@ const checkConnection = async () => {
     );
     return true;
   } catch (err) {
+    logger.error(err);
     return false;
   }
 };

@@ -4,6 +4,7 @@ const userService = require('./user.service');
 const Token = require('../models/token.model');
 const ApiError = require('../utils/ApiError');
 const { tokenTypes } = require('../config/tokens');
+const logger = require('../config/logger');
 
 /**
  * Login with username and password
@@ -50,6 +51,7 @@ const refreshAuth = async (refreshToken) => {
     await Token.findByIdAndDelete(refreshTokenDoc._id);
     return tokenService.generateAuthTokens(user);
   } catch (error) {
+    logger.error(error);
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Please authenticate');
   }
 };
@@ -70,6 +72,7 @@ const resetPassword = async (resetPasswordToken, newPassword) => {
     await userService.updateUserById(user.id, { password: newPassword });
     await Token.deleteMany({ user: user.id, type: tokenTypes.RESET_PASSWORD });
   } catch (error) {
+    logger.error(error);
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Password reset failed');
   }
 };
@@ -89,6 +92,7 @@ const verifyEmail = async (verifyEmailToken) => {
     await Token.deleteMany({ user: user.id, type: tokenTypes.VERIFY_EMAIL });
     await userService.updateUserById(user.id, { isEmailVerified: true });
   } catch (error) {
+    logger.error(error);
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Email verification failed');
   }
 };

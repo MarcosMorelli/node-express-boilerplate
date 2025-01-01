@@ -74,7 +74,6 @@ describe('toJSON plugin', () => {
       {
         toJSON: {
           transform: (doc, ret) => {
-            // eslint-disable-next-line no-param-reassign
             delete ret.private;
           },
         },
