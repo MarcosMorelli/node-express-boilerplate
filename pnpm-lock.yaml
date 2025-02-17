@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       bcryptjs:
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^3.0.1
+        version: 3.0.1
       cors:
         specifier: ^2.8.5
         version: 2.8.5
@@ -737,8 +737,8 @@ packages:
     resolution: {integrity: sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==}
     engines: {node: '>= 0.8'}
 
-  bcryptjs@3.0.0:
-    resolution: {integrity: sha512-Q2vVGpGC7B7m9wggpcA5lq4OYR5OS1nrXoUpnH9MmogXU8HpxzKg63uxtCrLebY5v/y3o0r7JcGCpR/vTGGn7A==}
+  bcryptjs@3.0.1:
+    resolution: {integrity: sha512-iY+rRoR0bToRe8LTJkVX2gawo8gmgDQbiFsaKy8fVuG3WXekEQrjasfmWIbJxJHttEKPa+xPxbw3GROnJSmu0A==}
     hasBin: true
 
   binary-extensions@2.2.0:
@@ -3604,7 +3604,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.1.2
 
-  bcryptjs@3.0.0: {}
+  bcryptjs@3.0.1: {}
 
   binary-extensions@2.2.0: {}
 
