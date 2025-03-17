@@ -43,7 +43,7 @@
     "express-compression": "^1.0.2",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.5.0",
-    "helmet": "^8.0.0",
+    "helmet": "^8.1.0",
     "http-status": "^2.1.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
