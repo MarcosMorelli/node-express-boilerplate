@@ -59,7 +59,7 @@
     "winston": "^3.17.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
+    "@eslint/js": "^9.23.0",
     "@faker-js/faker": "^9.6.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.23.0",
