@@ -38,7 +38,7 @@
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^17.0.0",
+    "dotenv": "^17.0.1",
     "express": "^5.1.0",
     "express-compression": "^1.0.2",
     "express-mongo-sanitize": "^2.2.0",
