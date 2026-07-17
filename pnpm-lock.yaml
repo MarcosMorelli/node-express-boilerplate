@@ -106,8 +106,8 @@ importers:
         specifier: ^30.4.2
         version: 30.4.2(@types/node@25.7.0)
       node-mocks-http:
-        specifier: ^1.18.0
-        version: 1.18.0(@types/express@4.17.21)(@types/node@25.7.0)
+        specifier: ^1.18.1
+        version: 1.18.1(@types/express@4.17.21)(@types/node@25.7.0)
       nodemon:
         specifier: ^3.1.14
         version: 3.1.14
@@ -2039,8 +2039,8 @@ packages:
   node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
 
-  node-mocks-http@1.18.0:
-    resolution: {integrity: sha512-arItRIarSUnpHAagCV5SB0DARvPXTA2ur+cVPCMm8d/KT2sqr9AF/QuHOoT3/PZ5cYFaQrpVkmoDUmMxuGW1Cw==}
+  node-mocks-http@1.18.1:
+    resolution: {integrity: sha512-hPMOLJZzhgT4i/zbYpfy1P2ulAlHtzFcrEGxPh/4pDRegCY3+p2sxDhQm1fxte5EgI/RwDx+NNW7v8kJcyxtMg==}
     engines: {node: '>=14'}
     peerDependencies:
       '@types/express': ^4.17.21 || ^5.0.0
@@ -4863,7 +4863,7 @@ snapshots:
 
   node-int64@0.4.0: {}
 
-  node-mocks-http@1.18.0(@types/express@4.17.21)(@types/node@25.7.0):
+  node-mocks-http@1.18.1(@types/express@4.17.21)(@types/node@25.7.0):
     dependencies:
       accepts: 1.3.8
       content-disposition: 0.5.4
