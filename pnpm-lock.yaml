@@ -48,8 +48,8 @@ importers:
         specifier: ^9.9.5
         version: 9.9.5
       morgan:
-        specifier: ^1.12.0
-        version: 1.12.0(supports-color@5.5.0)
+        specifier: ^1.12.1
+        version: 1.12.1(supports-color@5.5.0)
       nodemailer:
         specifier: ^10.0.1
         version: 10.0.1
@@ -2120,8 +2120,8 @@ packages:
     resolution: {integrity: sha512-t/kUoeDjlHmav7yCaq//YKU3wiIgUPaTj4GrluiTHUw4jQ77/CXtdMDSor4f1u3SKLhIK6NgCF+AzzUqU02Aag==}
     engines: {node: '>=20.19.0'}
 
-  morgan@1.12.0:
-    resolution: {integrity: sha512-OHpTRQwn2ezasILW8iKe+Yww1XsfWsZIpUOLF7RDb2g5GwO3trPaRwi7+8BDiJ7HFx2Kg2mfUdCBcVhwYlOz2g==}
+  morgan@1.12.1:
+    resolution: {integrity: sha512-tljKC0ex20AjO58Ob/eZ53JloycbVswbVNCHx6V6VLGzqt/w8dIynVGL0G8qVjNKwiA7sYSogCrN6QtJ82IV+g==}
     engines: {node: '>= 0.8.0'}
 
   mpath@0.9.0:
@@ -5029,7 +5029,7 @@ snapshots:
       - snappy
       - socks
 
-  morgan@1.12.0(supports-color@5.5.0):
+  morgan@1.12.1(supports-color@5.5.0):
     dependencies:
       basic-auth: 2.0.1
       debug: 2.6.9(supports-color@5.5.0)
